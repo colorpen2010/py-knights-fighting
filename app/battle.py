@@ -5,7 +5,7 @@ def fight(
     first_knight: dict[str, Any],
     second_knight: dict[str, Any],
 ) -> None:
-    """Resolve one simultaneous exchange and clamp defeated knights to zero HP."""
+    """Resolve simultaneous damage and clamp defeated knights to zero HP."""
     first_damage = second_knight["power"] - first_knight["protection"]
     second_damage = first_knight["power"] - second_knight["protection"]
 
